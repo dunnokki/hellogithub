@@ -1,5 +1,15 @@
 /* styles.css */
 
+html, body {
+  /* Apple trickery */
+  background-color: black;
+}
+
+body {
+  /* Mobile compatibility */
+  padding-top: env(safe-area-inset-top);
+}
+
 h1 {
   font-size: clamp(3rem, 5vw, 4rem);
   line-height: 1.2;

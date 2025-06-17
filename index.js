@@ -3,6 +3,10 @@
 const gameVersion = "Ver 1. 2025/06";
 document.getElementById("resultActual").textContent = gameVersion;
 
+// Background color (Apple trickery)
+document.querySelector("html").style.backgroundColor = "#212529";
+document.body.style.backgroundColor = "#212529";
+
 // Variables
 let player1Name, player1Result, player1Score = 0;
 let player2Name, player2Result, player2Score = 0;
