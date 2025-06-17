@@ -19,6 +19,8 @@ document.getElementById("buttonActual").addEventListener("click", throwDice);
 
 function throwDice() {
 
+  document.getElementById("buttonActual").disabled = true;
+
   document.getElementById("resultActual").classList.replace("resultActualBig", "text-secondary");
   document.getElementById("resultActual").textContent = "Rolling...";
 
@@ -78,6 +80,8 @@ function stopDice() {
   document.getElementById("resultActual").textContent = gameResultText;
   document.getElementById("player1ScoreSpan").textContent = "Score: " + player1Score;
   document.getElementById("player2ScoreSpan").textContent = "Score: " + player2Score;
+
+  document.getElementById("buttonActual").disabled = false;
 }
 
 function stopDiceAnimation(dice1Figure, dice2Figure) {
