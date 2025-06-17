@@ -8,7 +8,7 @@ let player1Name, player1Result, player1Score = 0;
 let player2Name, player2Result, player2Score = 0;
 let gameResult;
 let gameResultText;
-const dieFaces = 6;
+let dieFaces = 6;
 
 // Button functionality
 document.getElementById("buttonActual").addEventListener("click", throwDice);
