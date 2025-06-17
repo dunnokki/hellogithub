@@ -1,0 +1,9 @@
+{
+  "name": "Dice game",
+  "short_name": "Dice game",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "portrait"
+}
