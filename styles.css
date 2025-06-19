@@ -5,9 +5,20 @@ html, body {
   background-color: black;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   /* Mobile compatibility */
   padding-top: env(safe-area-inset-top);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 h1 {
@@ -37,4 +48,22 @@ label, input[type="name"] {
 
 .diceActual {
   font-size: clamp(3rem, 8vw, 4rem);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.footer::after {  
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: env(safe-area-inset-bottom);
+  width: 100%;
+  background-color: #000000;
 }
